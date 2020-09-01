@@ -1,4 +1,4 @@
-{% set version = '4.2.2' %}
+{% set version = "4.2.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/cobalt_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/cobalt/cobalt_{{ version }}.tar.gz
-  sha256: 0a2f6710300b86e1f8a8b3b381979938bbf3711df7d786e0da30b0f228087a8e
+  sha256: 7f126eb726cfe383b33a1a4c3ddeeff52eb909ac125336d0f5e17e64c68783e8
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   skip: true  # [r_base == "3.5.1"]
   rpaths:
     - lib/R/lib/
@@ -48,16 +48,11 @@ test:
 about:
   home: https://github.com/ngreifer/cobalt
   license: GPL-2.0-or-later
-  summary: Generate balance tables and plots for covariates of groups preprocessed through matching,
-    weighting or subclassification, for example, using propensity scores. Includes integration
-    with 'MatchIt', 'twang', 'Matching', 'optmatch', 'CBPS', 'ebal', 'WeightIt', 'cem',
-    'sbw', and 'designmatch' for assessing balance on the output of their preprocessing
-    functions. Users can also specify data for balance assessment not generated through
-    the above packages. Also included are methods for assessing balance in clustered
-    or multiply imputed data sets or data sets with longitudinal treatments.
+  summary: Generate balance tables and plots for covariates of groups preprocessed through matching, weighting or subclassification, for example, using propensity scores. Includes integration with 'MatchIt', 'twang', 'Matching', 'optmatch', 'CBPS', 'ebal', 'WeightIt', 'cem', 'sbw', and 'designmatch' for assessing balance
+    on the output of their preprocessing functions. Users can also specify data for balance assessment not generated through the above packages. Also included are methods for assessing balance in clustered or multiply imputed data sets or data sets with longitudinal treatments.
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
