@@ -1,13 +1,28 @@
-About r-cobalt
-==============
-
-Home: https://github.com/ngreifer/cobalt
-
-Package license: GPL-2.0-or-later
+About r-cobalt-feedstock
+========================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-cobalt-feedstock/blob/main/LICENSE.txt)
 
+About r-cobalt
+--------------
+
+Home: https://ngreifer.github.io/cobalt/
+
+Package license: GPL-2.0-or-later
+
 Summary: Generate balance tables and plots for covariates of groups preprocessed through matching, weighting or subclassification, for example, using propensity scores. Includes integration with 'MatchIt', 'twang', 'Matching', 'optmatch', 'CBPS', 'ebal', 'WeightIt', 'cem', 'sbw', and 'designmatch' for assessing balance on the output of their preprocessing functions. Users can also specify data for balance assessment not generated through the above packages. Also included are methods for assessing balance in clustered or multiply imputed data sets or data sets with longitudinal treatments.
+
+Development: https://github.com/ngreifer/cobalt
+About r-cobalt
+--------------
+
+Home: https://ngreifer.github.io/cobalt/
+
+Package license: GPL-2.0-or-later
+
+Summary: Generate balance tables and plots for covariates of groups preprocessed through matching, weighting or subclassification, for example, using propensity scores. Includes integration with 'MatchIt', 'twang', 'Matching', 'optmatch', 'CBPS', 'ebal', 'WeightIt', 'cem', 'sbw', and 'designmatch' for assessing balance on the output of their preprocessing functions. Users can also specify data for balance assessment not generated through the above packages. Also included are methods for assessing balance in clustered or multiply imputed data sets or data sets with longitudinal treatments.
+
+Development: https://github.com/ngreifer/cobalt
 
 Current build status
 ====================
