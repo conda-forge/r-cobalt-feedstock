@@ -3,6 +3,7 @@ About r-cobalt-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-cobalt-feedstock/blob/main/LICENSE.txt)
 
+
 About r-cobalt
 --------------
 
@@ -13,6 +14,7 @@ Package license: GPL-2.0-or-later
 Summary: Generate balance tables and plots for covariates of groups preprocessed through matching, weighting or subclassification, for example, using propensity scores. Includes integration with 'MatchIt', 'twang', 'Matching', 'optmatch', 'CBPS', 'ebal', 'WeightIt', 'cem', 'sbw', and 'designmatch' for assessing balance on the output of their preprocessing functions. Users can also specify data for balance assessment not generated through the above packages. Also included are methods for assessing balance in clustered or multiply imputed data sets or data sets with longitudinal treatments.
 
 Development: https://github.com/ngreifer/cobalt
+
 About r-cobalt
 --------------
 
@@ -157,7 +159,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
