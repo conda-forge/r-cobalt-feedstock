@@ -1,4 +1,4 @@
-{% set version = "4.5.3" %}
+{% set version = "4.5.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/cobalt_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/cobalt/cobalt_{{ version }}.tar.gz
-  sha256: f1b478dba615ba6f326501f16c88a719e6184c38f1d9dc4ec36307b56e1e0e75
+  sha256: 076c1956e1a24d3ded5ac6227bf05cb294e103dc0d02d825e65b72d2c5f62ec0
 
 build:
   merge_build_host: true  # [win]
