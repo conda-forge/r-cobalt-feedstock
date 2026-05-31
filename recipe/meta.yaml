@@ -1,4 +1,4 @@
-{% set version = "4.6.2" %}
+{% set version = "4.6.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,35 +9,39 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/cobalt_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/cobalt/cobalt_{{ version }}.tar.gz
-  sha256: 1526a2c2d37b6e12e297d25304741196cb301476308b6f479f1bd20bb2503cf9
+  sha256: adb28d8553d37a0ff4c30069f9626a73055fb75f6cb37caa6fc7e642a3723872
 
 build:
   number: 0
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
+  missing_dso_whitelist:
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 requirements:
   build:
-    - {{ posix }}zip      # [win]
+    - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-backports >=1.1.9
-    - r-chk >=0.8.1
-    - r-crayon
-    - r-ggplot2 >=3.4.1
+    - r-arg >=0.1.1
+    - r-cli >=3.6.5
+    - r-ggplot2 >=4.0.0
     - r-gridextra >=2.3
-    - r-gtable >=0.3.0
-    - r-rlang >=0.4.0
+    - r-gtable >=0.3.6
+    - r-rlang >=1.2.0
   run:
     - r-base
-    - r-backports >=1.1.9
-    - r-chk >=0.8.1
-    - r-crayon
-    - r-ggplot2 >=3.4.1
+    - r-arg >=0.1.1
+    - r-cli >=3.6.5
+    - r-ggplot2 >=4.0.0
     - r-gridextra >=2.3
-    - r-gtable >=0.3.0
-    - r-rlang >=0.4.0
+    - r-gtable >=0.3.6
+    - r-rlang >=1.2.0
 
 test:
   commands:
