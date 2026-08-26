@@ -1,4 +1,4 @@
-{% set version = "4.6.3" %}
+{% set version = "5.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/cobalt_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/cobalt/cobalt_{{ version }}.tar.gz
-  sha256: adb28d8553d37a0ff4c30069f9626a73055fb75f6cb37caa6fc7e642a3723872
+  sha256: b15f4520db40f2dce693028dc06dc4864d2f81746c2a463d52665fe5fdb56a27
 
 build:
   number: 0
